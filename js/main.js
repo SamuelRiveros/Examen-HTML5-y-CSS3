@@ -4,6 +4,12 @@ let btnObtener2 = document.getElementById("obtener2")
 
 let btnObtener3 = document.getElementById("obtener3")
 
+let btnDetalles = document.getElementById("carritocompras")
+
+let btnX = document.getElementById("buttonX")
+
+let productoXX = document.getElementById("productoX")
+
 
 btnObtener.addEventListener("click", event => {
     const ver = document.querySelectorAll(".productobtenido")
@@ -32,3 +38,30 @@ btnObtener3.addEventListener("click", event => {
 
 });
 
+btnDetalles.addEventListener("click", event => {
+    const ver = document.querySelectorAll(".detalles")
+
+    ver.forEach(element => {
+        element.style.display = "flex";
+    });
+
+});
+
+btnX.addEventListener("click", event => {
+    const ver = document.querySelectorAll(".productobtenido , .detalles")
+
+    ver.forEach(element => {
+        element.style.display = "none";
+    });
+
+});
+
+
+productoXX.addEventListener("click", event => {
+    const ver = document.querySelectorAll(".productobtenido , .detalles")
+
+    ver.forEach(element => {
+        element.style.display = "none";
+    });
+
+});

@@ -46,7 +46,7 @@ header button:hover {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -226,15 +226,14 @@ main {
 }
 
 
-
-
-
-
 .detalles {
+    position: fixed;
+    left: 60vh;
+    top: 10vw;
     outline: #000 solid;
     background-color: var(--color-grisclaro);
     border-radius: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 35vw;
     height: 70vh;
@@ -256,9 +255,9 @@ main {
 }
 
 .detalleszone {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border-radius: 5px;
     outline: #000 solid;
@@ -330,4 +329,31 @@ main {
     border: none;
     width: 5vw;
     height: 3vh;
+}
+
+.carritocompras {
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    position: fixed;
+    bottom: 80vh;
+    left: 92vw;
+    font-size: 70px;
+    transition: all 0.3s;
+    transform: rotatez(-30deg);
+}
+
+.carritocompras:hover {
+    color: var(--color-blanco);
+    transform: scalez(5);
+    cursor: pointer;
+    background-color: var(--color-negro);
+}
+
+.buttonX {
+    border: none;
+}
+
+.buttonX:hover {
+    cursor: pointer;
 }
