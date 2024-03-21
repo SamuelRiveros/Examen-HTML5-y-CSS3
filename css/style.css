@@ -158,7 +158,10 @@ main {
 .productobtenido {
     background-color: var(--color-grisclaro);
     border-radius: 10px;
-    display: flex;
+    display: none;
+    position: fixed;
+    left: 60vh;
+    top: 10vw;
     flex-direction: column;
     width: 40vw;
     height: 70vh;
@@ -228,7 +231,7 @@ main {
 
 
 .detalles {
-    outline: red solid;
+    outline: #000 solid;
     background-color: var(--color-grisclaro);
     border-radius: 10px;
     display: flex;
@@ -254,34 +257,77 @@ main {
 
 .detalleszone {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 15px;
-    outline: var(--color-gris) solid;
+    align-items: center;
+    border-radius: 5px;
+    outline: #000 solid;
     width: 30vw;
     height: 51vh;
+    overflow-y: scroll;
 }
 
 
 .productodetalles {
+    gap: 0.5vw;
     flex-wrap: wrap;
-    border-radius: 10px;
-    margin-top: 10px;
-    outline: red solid ;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: rgb(0, 0, 0) solid ;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 10vh;
     width: 25vw;
 }
 
-.productodetalles p {
-    font-size: 15px;
-}
-
-
 .productodetallesimg {
     object-fit: contain;
     width: 20%;
     height: 100%;
+}
+
+.tituloproductodetalles .tituloproducto {
+    font-size: 20px;
+}
+
+.cantidaddetalles {
+    padding-left: 10px;
+    align-items: center;
+    outline: var(--color-gris) solid;
+    border-radius: 10px;
+    outline-width: 2px;
+    display: flex;
+    height: 30px;
+}
+
+.detallespagar {
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin-top: 1vw;
+    width: 30vw;
+    height: 6vh;
+    outline: var(--color-negro) solid;
+    display: flex;
+}
+
+.pagopuro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pagar {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: var(--color-gris);
+    border: none;
+    width: 5vw;
+    height: 3vh;
 }
