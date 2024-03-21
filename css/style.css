@@ -12,7 +12,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(224, 224, 224);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -54,6 +54,8 @@ main {
 .productozone {
     margin-top: 6em;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -149,8 +151,137 @@ main {
 }
 
 .obtener:hover {
-    
     cursor: pointer;
     background-color: greenyellow;
 }
 
+.productobtenido {
+    background-color: var(--color-grisclaro);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 70vh;
+    border: var(--color-negro) solid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px #000;
+}
+
+.cantidadyagregar {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.agregar {
+    border-radius: 10px;
+    background-color: var(--color-verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 5vw;
+    height: 3em;
+    transition: all 0.3s;
+}
+
+.agregar:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.productobtenidoimagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.productobtenidoimagen img{
+    height: 300px;
+    object-fit: contain;
+    padding: 5px;
+    -webkit-user-drag: none;
+}
+
+.productoX {
+    background: none;
+    border: none;
+    display: flex;
+    position: relative;
+    left: 130px;
+    bottom: 130px;
+}
+
+
+.productoX i{
+    font-size: 50px;
+}
+
+
+
+
+
+
+.detalles {
+    outline: red solid;
+    background-color: var(--color-grisclaro);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 70vh;
+    align-items: center;
+    box-shadow: 0 0 50px #000;
+}
+
+.detallesuper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 13%;
+}
+
+.detallesuper i{
+    margin-left: 5vw;
+    font-size: 40px;
+}
+
+.detalleszone {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    outline: var(--color-gris) solid;
+    width: 30vw;
+    height: 51vh;
+}
+
+
+.productodetalles {
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: red solid ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 25vw;
+}
+
+.productodetalles p {
+    font-size: 15px;
+}
+
+
+.productodetallesimg {
+    object-fit: contain;
+    width: 20%;
+    height: 100%;
+}
